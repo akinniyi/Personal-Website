@@ -1,11 +1,11 @@
 import styled from 'styled-components'
 
 const SubTitle = styled.div`
-    color: #282c34;  
+    color: #57616E;  
     font-size: 20px;
     letter-spacing:1.8px;
     font-weight:400;
-    margin-bottom:20px;
+    margin-top:20px;
     text-align: center;
     text-transform:uppercase;
     @media only screen
@@ -14,5 +14,4 @@ const SubTitle = styled.div`
         font-size: 16px;
     }
 `;
-
 export default SubTitle

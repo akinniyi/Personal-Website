@@ -3,10 +3,11 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import SvgEmail from '../images/SvgEmail';
 import SvgInstagram from '../images/SvgInstagram';
+import Hr from './Hr';
 
 const Icon = styled.i`
   text-align: center;
-  fill:palevioletred;
+  fill:#57616E;
   display:inline-block;
   background-color:transparent;
   width:20px;
@@ -27,14 +28,14 @@ const Icon = styled.i`
   Svg{
       width:100%;
       path{
-        fill:palevioletred;
+        fill:#57616E;
       }
   }
 `;
 const Wrapper = styled.span`
   font-size: 12px;
   opacity:0.6;
-  color: palevioletred;
+  color: #57616E;
   display:inline-block;
   background-color:transparent;
   margin:0;
@@ -53,7 +54,7 @@ const Wrapper = styled.span`
 `;
 const Link = styled.a`
   font-size: 15px;
-  color: palevioletred;
+  color: #57616E;
   display:inline-block;
   background-color:transparent;
   margin:0 5px;
@@ -70,15 +71,16 @@ class ContactLinks extends Component {
     
     render() {
       return (
-        <div>
+        <div style={{padding:"20px 0 20px 0"}}>
             <Wrapper>
-                <Icon><SvgEmail/></Icon>
-                <Link href="mailto:akinara@live.com">akinara@live.com</Link>
+              <Icon><SvgEmail/></Icon>
+              <Link href="mailto:akinara@live.com">akinara@live.com</Link>
             </Wrapper>&nbsp;&nbsp;
             <Wrapper>
-                <Icon><SvgInstagram/></Icon>
-                <Link target="_blank" href="https://instagram.com/thisniyi">instagram.com/thisniyi</Link>
-            </Wrapper>
+              <Icon><SvgInstagram/></Icon>
+              <Link target="_blank" href="https://instagram.com/thisniyi">instagram.com/thisniyi</Link>
+            </Wrapper><br/><br/>
+            <Hr/>
         </div>
       );
     }

@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const Button = styled.button`
+const HyperLink = styled.a`
   display:inline-block;
   background-color:#0600ff;
   color:#fff;
@@ -12,10 +12,7 @@ const Button = styled.button`
   letter-spacing:1.2px;
   cursor:pointer;
   transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1.0);
-  a{
-    color:inherit;
-    text-decoration:none;
-  }
+  text-decoration:none;
   :hover{
     -webkit-box-shadow: 13px 10px 27px -16px rgba(97,97,97,1);
     -moz-box-shadow: 13px 10px 27px -16px rgba(97,97,97,1);
@@ -23,4 +20,4 @@ const Button = styled.button`
   }
 `;
 
-export default Button
+export default HyperLink

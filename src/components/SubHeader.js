@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const SubHeader = styled.div`
-    background-color:#282c34;  
+    background-color:#57616E;  
     height:280px;
     padding:5%;
     text-align: center;

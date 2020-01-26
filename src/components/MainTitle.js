@@ -1,17 +1,14 @@
 import styled from 'styled-components'
+import React, { Component } from 'react';
+import './MainTitle.css';
 
-const MainTitle = styled.h1`
-  color: #fff;  
-  font-size: 2.5em;
-  font-weight:100;
-  margin:0;
-  text-align: center;
-  @media only screen
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) { 
-    font-size: 1.5em;
+class MainTitle extends Component {
+  render() {
+    return (
+      <div className="MainTitle">
+        HI, I'M NIYI - I ENJOY NIGERIAN JOLLOF & TARANTINO MOVIES
+      </div>
+    );
   }
-`;
-
+}
 export default MainTitle

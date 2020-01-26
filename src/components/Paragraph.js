@@ -6,13 +6,14 @@ const Paragraph = styled.p`
   line-height: 40px;
   text-align: left;
   margin:0;
+  padding:20px;
 
   
 `;
 // ${props =>
 //   props.primary &&
 //   css`
-//     background: palevioletred;
+//     background: #57616E;
 //     color: white;
 //   `};
 export default Paragraph

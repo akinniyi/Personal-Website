@@ -1,0 +1,21 @@
+runtime: nodejs
+api_version: '1'
+env: flex
+threadsafe: true
+handlers:
+  - url: /
+    application_readable: false
+    static_files: www/index.html
+    require_matching_file: false
+    upload: www/index.html
+  - url: /(.*)
+    application_readable: false
+    static_files: www/\1
+    require_matching_file: false
+    upload: www/(.*)
+automatic_scaling:
+  min_num_instances: 2
+  max_num_instances: 4
+  cpu_utilization:
+    target_utilization: 0.6
+network: {}
